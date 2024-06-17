@@ -16,7 +16,7 @@ echo Upgrading pip
 python -m pip install --upgrade pip
 
 echo Installing Apache Airflow
-pip install "apache-airflow==2.9.2" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.2/constraints-3.7.txt"
+pip install "apache-airflow[celery]==2.9.2" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.2/constraints-3.8.txt"
 
 echo Initializing the database
 airflow db init
